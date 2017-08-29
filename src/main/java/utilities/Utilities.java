@@ -11,17 +11,7 @@ import java.io.PrintWriter;
 public class Utilities {
 //    private final static Logger LOGGER = LoggerFactory.getLogger(Utilities.class);
 
-    public static String generateFileWithData() {
-        String path = "src/main/resources/test.csv";
-        File createFile = new File(path);
-        try {
-            createFile.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-        return path;
-    }
 
     public static void writeToCsvFile() {
         String path = "src/main/resources/instrumentFile.csv";
@@ -32,6 +22,8 @@ public class Utilities {
 
             for (int i = 0; i < 100; i++){
                 printWriter.write("INSTRUMENT1" + "," + "USD/2017.08.28" + "," + "2.18 \n");
+                printWriter.write("INSTRUMENT2" + "," + "USD/2017.08.28" + "," + "2.18 \n");
+                printWriter.write("INSTRUMENT3" + "," + "USD/2017.08.28" + "," + "2.18 \n");
             }
             printWriter.close();
 //            LOGGER.info("DONE");
