@@ -12,8 +12,11 @@ public class test {
 
 //        LOG.info("{}", Utilities.getDate("dd-LLLL-yyyy"));
 
-        for(int i = 0; i<100; i++){
-            LOG.info("{}", Utilities.getRndDate("dd-LLLL-yyyy"));
-        }
+//        for(int i = 0; i<100; i++){
+//            LOG.info("{}", Utilities.getRndBetween(0.1, 10.0));
+//        }
+
+        Utilities.writeToCsvFile();
+
     }
 }
