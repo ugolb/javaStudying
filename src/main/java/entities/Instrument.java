@@ -26,24 +26,21 @@ public class Instrument {
 
         public InstrumentBuilder instName(String instrumentName) {
             this.instName = instrumentName;
-
             return this;
         }
 
         public InstrumentBuilder date(Date date) {
             this.date = date;
-
             return this;
         }
 
         public InstrumentBuilder rate(double rate) {
             this.rate = rate;
-
             return this;
         }
 
         public Instrument build() {
-
+            LOG.info("Start building instrument: ", toString());
             return new Instrument(instName, date, rate);
         }
     }
