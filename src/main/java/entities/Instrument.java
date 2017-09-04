@@ -40,7 +40,7 @@ public class Instrument {
         }
 
         public Instrument build() {
-            LOG.info("Start building instrument: ", toString());
+//            LOG.info("Start building instrument: ", toString());
             return new Instrument(instName, date, rate);
         }
     }
@@ -53,4 +53,18 @@ public class Instrument {
                 ", rate=" + rate +
                 '}';
     }
+
+    public String getInstrumentName() {
+        return instrumentName;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public double getRate() {
+        return rate;
+    }
+
+
 }

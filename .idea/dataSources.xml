@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="master@localhost" uuid="7be37d2a-5c86-4407-919d-7d20923159f5">
+      <driver-ref>sybase.ase</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.sybase.jdbc4.jdbc.SybDriver</jdbc-driver>
+      <jdbc-url>jdbc:sybase:Tds:localhost:5000/master</jdbc-url>
+      <driver-properties>
+        <property name="APPLICATIONNAME" value="DataGrip" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>
